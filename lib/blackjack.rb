@@ -5,6 +5,7 @@ end
 
 def deal_card
   return rand(1..11)
+  binding.pry
 end
 
 def display_card_total(card_total)
