@@ -24,6 +24,7 @@ end
 
 def initial_round
   card_total = deal_card
+  binding.pry
   card_total += deal_card
   display_card_total(card_total)
   #and then return the sum
