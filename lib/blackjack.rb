@@ -31,20 +31,15 @@ def initial_round
 end
 
 def hit?(card_total)
-  prompt_user
   binding.pry
+  prompt_user
   input = get_user_input
-  
   if input == "s"
     card_total
-   
   elseif input == "h"
     card_total += deal_card
-     
   else
-    
     invalid_command
-    
   end
 end
 
