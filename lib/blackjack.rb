@@ -63,7 +63,7 @@ def runner
   
   card_total = initial_round
   binding.pry
-  count = 0
+  
   until card_total > 21 
     card_total = hit?(card_total)
     
