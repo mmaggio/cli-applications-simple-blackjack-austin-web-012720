@@ -41,8 +41,9 @@ def hit?(card_total)
     card_total += deal_card
      
   else
-    binding.pry
+    
     invalid_command
+    binding.pry
   end
 end
 
