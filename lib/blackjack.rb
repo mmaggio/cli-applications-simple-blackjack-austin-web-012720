@@ -33,7 +33,7 @@ end
 def hit?(card_total)
   prompt_user
   input = get_user_input
-  
+  binding.pry
   if input == "s"
     card_total
   elseif input == "h"
@@ -45,7 +45,7 @@ end
 
 def invalid_command
    puts "Please enter a valid command"
-   binding.pry
+  
    prompt_user
 end
 
