@@ -32,6 +32,7 @@ end
 
 def hit?(card_total)
   prompt_user
+  binding.pry
   input = get_user_input
   
   if input == "s"
@@ -43,7 +44,7 @@ def hit?(card_total)
   else
     
     invalid_command
-    binding.pry
+    
   end
 end
 
