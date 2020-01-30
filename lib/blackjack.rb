@@ -39,8 +39,9 @@ def hit?(card_total)
    
   elseif input == "h"
     card_total += deal_card
-     binding.pry
+     
   else
+    binding.pry
     invalid_command
   end
 end
