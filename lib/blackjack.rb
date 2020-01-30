@@ -38,6 +38,7 @@ def hit?(card_total)
     card_total
   elsif input == "h"
     card_total += deal_card
+    binding.pry
   else
     invalid_command
     prompt_user
@@ -59,12 +60,12 @@ def runner
   initial_round
   card_total = initial_round
   count = 0
-  until card_total > 21 || count > 20
+  until card_total > 21 
     hit?(card_total)
-    count += 1
+    
     display_card_total(card_total)
   end
-end_game(card_total)
+ end_game(card_total)
   
   
 end
